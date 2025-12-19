@@ -25,10 +25,22 @@ class User {
         return $this->login;
     }
 
-        public function get_password() {
+    public function getPassword() {
         return $this->password;
     }
-    public function display() {
+    public function setName($name): void {
+        $this->name = $name;
+    }
+
+    public function setLogin($login): void {
+        $this->login = $login;
+    }
+
+    public function setPassword($password): void {
+        $this->password = $password;
+    }
+
+        public function display() {
         echo "<pre>";
         echo "<article>";
         echo "<h2>Hello," . $this->getLogin() . "</h2>";
