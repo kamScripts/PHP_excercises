@@ -1,3 +1,0 @@
-This is a test file
-second line is longer than first.
-Third is a bit longer than second one.

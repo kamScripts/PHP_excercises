@@ -14,13 +14,16 @@ header {
     align-items: center;
     gap: 1rem;
 }
+
 a {
     padding:2px;
     color: green;
     text-decoration: none;
     border: 3px blue solid;
 }
-
-    
-
+button {
+    width: 100px;
+    background-color: darkkhaki;
+    border-radius: 5px;
+}
 
