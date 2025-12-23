@@ -1,0 +1,2 @@
+This a test string to insert into a path.
+Second line of a path is a last line as well.

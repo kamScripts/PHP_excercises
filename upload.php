@@ -9,7 +9,6 @@
 <body>
 <?php
 echo <<<_END
-
     <form method='post' action='upload.php' enctype='multipart/form-data'>
         <label>Select file⏏️: 
             <input type='file' name='filename' size='10'>
@@ -22,7 +21,7 @@ echo <<<_END
 _END;
 if ($_FILES) {
     $name = $_FILES['filename']['name'];
-    //Safely Recive text input with filter_input
+    //Safely grab input with filter_input
     $alt =(string) filter_input(INPUT_POST, 'caption', FILTER_SANITIZE_STRING);
     //Process with htmlspecialchars, prevent XSS attacks
     $sanitizedAlt = htmlspecialchars($alt, ENT_QUOTES);
